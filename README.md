@@ -13,10 +13,15 @@ PS: A Swagger Starwars não permite fazer o comando 'POST', porém a logica que 
 2. Organizando seu projeto por pastas:
 	2.1 - Uma pasta "mãe" para organizar os Requests e Tests, que nesse caso vamos chamar de SW (por ser Starwars);
 	2.2 - Dentro dela vamos criar mais 3:
+		
 		2.2.1 - Payloads: Pasta aonde se encontram os json's
+		
 		2.2.2 - Requests: Aonde iremos alocar nossas estruturas de request.js
+		
 		2.2.3 - Tests: Como o proprio nome diz, será a pasta para alocar os testes relacionados spec.js
+
 		Dica: Uma observação muito importante é sempre por o nome da Request e do Test igual, pois assim fica muito mais fácil de identificar
+
 3. Feito a organização, tendo o link da API que podemos testar, agora vamos para o modelo de como iniciar.
 	- Quando o assunto é padronização, os frameworks possuem algo chamado "roteiro", que ajuda bastante na assimilação e padronização dos testes.
 	- Vejamos o caso de do request relacionado a GET. O nome do arquivo será GETStarwars.request.js:
@@ -46,6 +51,7 @@ describe('GET Books', () => {				  -> Função do que será feito dentro do test
 })
 
 ->POST
+
 - Para fazer os testes de requisição com o POST, o processo requer um pouco mais de atenção e cuidados.
 1. Nesse caso, vamos utilizar a mesma API para realizar a função POST:  https://swapi.dev/.
 Caso não seja possivel, qualquer swagger/api livre também é valida.
